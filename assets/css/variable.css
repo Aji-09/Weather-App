@@ -1,0 +1,32 @@
+:root {
+    --primary-neutral-dark: hsl(0, 0%, 20%);
+    --accent-color: hsl(200 50% 50%);
+    --font: "Noto Sans", sans-serif;
+
+    --text-primary: hsl(0, 0%, 95%); /* Main text color */
+    --text-secondary: hsl(0, 0%, 70%); /* Secondary / muted text */
+    --text-heading: hsl(0, 0%, 100%);
+
+    --font-xs: 0.75rem; /* Extra small, like captions */
+    --font-sm: 0.875rem; /* Small, like secondary text */
+    --font-base: 1rem; /* Normal body text */
+    --font-lg: 1.25rem; /* Large text */
+    --font-xl: 1.5rem; /* Extra large headings */
+    --font-2xl: 2rem; /* Bigger headings */
+    --font-3xl: 2.5rem; /* Hero text / main titles */
+    --font-4xl: 3rem;
+
+    --font-weight-light: 200;
+    --font-weight-normal: 400;
+    --font-weight-bold: 600;
+}
+
+.font-light {
+    font-family: var(--font);
+    font-size: var(--font-sm);
+    color: var(--text-secondary);
+}
+
+.container {
+    background-color: hsl(0, 0%, 15%);
+}

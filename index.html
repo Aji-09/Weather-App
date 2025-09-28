@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/variable.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div id="wrapper">
+    <!-- Left Container -->
+    <div id="leftContainer">
+      <div id="header">
+        <!-- Logo -->
+        <img src="assets/images/Frame 1(1).svg" alt="Weather Logo" height="32">
+        
+        <!-- Title -->
+        <h1 id="title">Weather Forecast</h1>
+        
+        <!-- Search -->
+        <form id="searchForm">
+          <input type="text" id="placeInput" placeholder="Enter place...">
+          <button type="submit" id="submitBtn">Search</button>
+        </form>
+
+        <!-- Date -->
+        <div id="dateNow"></div>
+      </div>
+
+      <div id="location">
+        <p>Location:<span id="placeName"> Default</span></p>
+      </div>
+
+      <div id="tempDisplay">
+        <div id="tempContainer">
+          <div id="temp">--°</div>
+          <div id="temp2">
+            <div><span>High</span></div>
+            <div><span>Low</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="weatherCode">---</div>
+
+      <div id="week">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+
+    <!-- Right Container -->
+    <div id="rightContainer">
+      <div id="dayTime">---</div>
+      <div id="time">--:--</div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

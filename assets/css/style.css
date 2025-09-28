@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+p,
+div {
+    cursor: default; /* keeps the normal arrow pointer */
+}
+
+
+input,
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+html {
+    font-family: var(--font);
+}
+
+body {
+    background-repeat: no-repeat;
+    color: var(--text-primary);
+    font-family: "Noto Sans", sans-serif;
+    display: flex;
+    background-image: url(../images/background.png);
+    background-size: cover;
+    justify-content: center;
+    height: 100vh;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: row;
+    height: 80vh;
+    width: 90vw;
+    margin-top: 10vh;
+    box-shadow: 0 0 15px hsl(0, 0%, 5%);
+    border-radius: 15px;
+}
+
+/* Left Container  */
+#leftContainer {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    background-color: hsla(0, 0%, 15%, 0.5);
+    border-radius: 1rem 0 0 1rem;
+
+}
+#header {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 50px;
+    margin-top: 1rem;
+}
+
+#title {
+    font-weight: 200;
+    font-style: italic;
+    font-size: var(--font-base);
+}
+#searchForm {
+    display: flex;
+    justify-content: center;
+    font-size: var(--font-sm);
+    overflow: hidden;
+}
+
+#searchForm input {
+    padding: 5px 0px 5px 20px;
+    border-radius: 5px 0 0 5px;
+    width: 20vw;
+    overflow: hidden;
+}
+#searchForm button {
+    padding: 6px;
+    border-radius: 0 5px 5px 0;
+}
+#dateNow {
+    /* position: relative;
+    left: 50%;
+    transform: translate(-50%); */
+    font-weight: var(--font-weight-light);
+    font-size: var(--font-sm);
+}
+#location {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    font-size: var(--font-sm);
+    color: hsl(0, 0%, 75%);
+    font-weight: 350;
+    
+}
+
+#location span{
+    margin-left: 3px;
+}
+#tempDisplay {
+    height: 100%;
+    justify-content: center;
+    margin-top: 1rem;
+}
+#tempContainer {
+    display: flex;
+    justify-content: center;
+    
+}
+
+#temp {
+    display: flex;
+    justify-content: center;
+    font-size: 7rem;
+    font-weight: 500;
+}
+#temp2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 4%;
+    gap: 6px;
+    font-size: var(--font-sm);
+    color: hsl(0, 0%, 70%);
+    font-weight: 500;
+}
+#temp2 div{
+    display: flex;
+    align-items: center;
+}
+#temp2 div span{
+    margin-left: 3px;
+}
+#weatherCode {
+    display: flex;
+    justify-content: center;
+    font-size: var(--font-2xl);
+    font-weight: var(--font-weight-normal);
+}
+#week {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 30px;
+    font-size: var(--font-sm);
+}
+
+#week > div {
+    height: 18vh;
+    width: 100px;
+
+    border-radius: 0.5rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+}
+#week > div:first-child {
+    border: 2px solid hsl(0, 0%, 70%);
+}
+.day {
+    display: flex;
+    justify-content: center;
+}
+.dailyTemp {
+    display: flex;
+    justify-content: center;
+    font-size: var(--font-lg);
+    color: hsl(0, 0%, 80%);
+}
+.code {
+    display: flex;
+    justify-content: center;
+    font-size: var(--font-xs);
+    color: hsl(0, 0%, 70%);
+}
+
+/* Right Container */
+#rightContainer {
+    width: 30%;
+    border-radius: 0 1rem 1rem 0;
+}
+#dayTime {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    font-size: var(--font-xl);
+}
+#time {
+    display: flex;
+    justify-content: center;
+    font-size: var(--font-2xl);
+}
